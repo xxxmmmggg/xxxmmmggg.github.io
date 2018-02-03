@@ -4,7 +4,7 @@ title:      "老友记"
 subtitle:   "老友记学英语"
 date:       2018-02-02
 author:     "xmg"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/post-friends.jpg"
 tags:
     - 老友记
 ---
