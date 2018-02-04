@@ -2,10 +2,10 @@
 title: Gxm
 SEOTitle: 一把刷子 | One Brush
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: 
 description: ""
 keyword: ""
-url: "https://xxxmmmggg.github.io"              # your host, for absolute URL
+url: ""              # your host, for absolute URL
 baseurl: ""                                   # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -60,8 +60,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id:             # Format: UA-xxxxxx-xx
+ga_domain: 
 
 
 
@@ -108,8 +108,8 @@ friends: [
         title: "SmdCn's Blog",
         href: "http://blog.smdcn.net"
     },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
+        title: "博客",
+        href: "http://huangxuan.me"
     },{
         title: "DHong Say",
         href: "http://dhong.co"
