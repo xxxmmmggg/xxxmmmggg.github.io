@@ -1,0 +1,19 @@
+---
+layout:       post
+title:        "老友记"
+subtitle:     "Friends"
+date:         2018-02-03
+author:       "Gxm"
+header-img:   "img/friends.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - 老友记
+---
+
+### 1. RENDER，渲染初始路由，尽快让应用可被交互
+
+### 2. RENDER，渲染初始路由，尽快让应用可被交互
+
+### 3. RENDER，渲染初始路由，尽快让应用可被交互
