@@ -14,6 +14,10 @@ tags:
     - PWA
 ---
 
+<!-- Chinese Version -->
+<div class="zh post-container">
+    {% capture about_zh %}
+
 
 > 很荣幸在今年 2 月到 5 月的时间里，以顾问的身份加入饿了么，参与 PWA 的相关工作。这篇文章其实最初是在以英文写作发表在 medium 上的：[Upgrading Ele.me to Progressive Web Apps](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)，获得了一定的关注。所以也决定改写为中文版本再次分享出来，希望能对你有所帮助 ;) <br><br>
 > 本文首发于 [CSDN](http://geek.csdn.net/news/detail/210535) 与《程序员》2017 年 7 月刊，同步发布于 [饿了么前端 - 知乎专栏](https://zhuanlan.zhihu.com/ElemeFE)、[Hux Blog](https://huangxuan.me)，转载请保留链接。
@@ -53,3 +57,9 @@ tags:
 ### 2. RENDER，渲染初始路由，尽快让应用可被交互
 
 既然所有初始路由的依赖都已经就绪，我们就可以尽快开始初始路由的渲染，这有助于提升应用诸如首次渲染时间、可交互时间等指标。多页应用并不使用基于 JavaScript 的路由，而是传统的 HTML 跳转机制，所以对于这一部分，多页应用其实不用额外做什么。
+
+
+### 3. PRE-CACHE，用 Service Worker 预缓存剩下的路由
+    {% endcapture %}
+    {{ about_zh | markdownify }}
+</div>
