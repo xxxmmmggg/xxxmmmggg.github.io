@@ -7,7 +7,6 @@ author:       "Gxm"
 header-img:   "img/friends.jpg"
 header-mask:  0.3
 catalog:      true
-multilingual: true
 tags:
     - 老友记
 ---
