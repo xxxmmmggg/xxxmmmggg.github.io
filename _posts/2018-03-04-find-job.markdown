@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "操作系统"
-subtitle:     "OS"
+title:        "找工作"
+subtitle:     "find job"
 date:         2018-03-04
 author:       "Gxm"
 header-img:   "img/post-bg-2015.jpg"
@@ -9,17 +9,17 @@ header-mask:  0.3
 catalog:      true
 multilingual: true
 tags:
-    - 操作系统
+    - 找工作
 ---
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-    {% capture about_zh %}{% include posts/content/os.md %}{% endcapture %}
+    {% capture about_zh %}{% include posts/content/job.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
-    {% capture about_zh %}{% include posts/content/os.md %}{% endcapture %}
+    {% capture about_zh %}{% include posts/content/job.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
