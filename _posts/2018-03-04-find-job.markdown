@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "找工作"
-subtitle:     "find job"
+title:        "面试问题"
+subtitle:     "OS Network SQL"
 date:         2018-03-04
 author:       "Gxm"
 header-img:   "img/post-bg-2015.jpg"
@@ -9,7 +9,7 @@ header-mask:  0.3
 catalog:      true
 multilingual: true
 tags:
-    - 找工作
+    - 面试问题
 ---
 
 <!-- Chinese Version -->
