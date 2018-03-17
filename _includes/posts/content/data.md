@@ -5,10 +5,10 @@
 ---
 ### 树      
 #### 1.二叉树的前中后三种非递归遍历
-思路： 非递归版本考虑用栈和堆实现
+思路： 非递归版本考虑用栈和堆实现    
 前序：
 ```js
-void go(Node* t){
+void go(Node* t){    
 	Stack<Node* > stack;
     if(t==null)return;
 	stack.push(t); 
