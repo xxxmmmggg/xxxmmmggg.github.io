@@ -31,6 +31,7 @@ void quikSort(int[] array,int start,int end){    // 快速排序
 	if(sta<(index-1))go(array,start,index-1);
 	if(end>(index+1))go(array,index+1,end);	
 }
+```
 ---
 
 ### 树      
