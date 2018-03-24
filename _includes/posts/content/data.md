@@ -1,7 +1,18 @@
 ### 排序
 #### 1.插入、冒泡、快排
 
-```js  
+```js
+vodi select(int[] array){ //选择排序
+	int len=array.length;
+	int index=0;
+	for(int i=0;i<len-1;i++){
+		index=i;
+		for(int j=i+1;j<len-1;j++){
+			if(array[index]<array[j])
+				swap(array[index],array[j]);
+		}
+	}
+}  
 void maopao(int[] array){     //冒泡排序
 	int len=array.length;
 	for(int i=0;i<len;i++){
@@ -128,6 +139,20 @@ boolean go(Node* t, int *l){
 			return false;
 		}
 	}
+}
+```
+#### 3.逐层打印二叉树
+```js
+void go(Node* t){
+	Queue<Stack* t> q=new Queue();
+	q.push(t);
+	while(!q.empty()){
+		temp=q.top();
+		visit(temp);
+		q.pop();
+		if(t->left)q.push(t->left);
+		if(t->right)q.push(t->right);
+	} 
 }
 ```
 ---
