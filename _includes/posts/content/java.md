@@ -68,4 +68,39 @@ String不可以修改，重新赋值是生成新的对象；StringBuffer变量�
 ### 5.集合、容器
 #### 1.BlockingQueue是什么
 BlockingQueue是阻塞队列，有ArrayBlockingQueue(固定大小，数组实现)、LinkedBlockingQueue（链表实现）、PriorityBlockingQueue（只含有一个元素的队列）等。实现的原理是使用锁和设置锁条件。
-#### 2.
+#### 2.ArrayList、LinkedList、Vector、copyOnWriteList
+ArrayList基于数组实现、不是线程安全的，扩容的时候每次扩50%。默认大小是10；    
+LinkedList基于链表实现，不是线程安全的；     
+Vector基于数组实现，加了Synchronized所以是线程安全的，每次扩容扩100%；      
+copyOnWriteList基于写时复制的思想，线程可以并发的读容器，但是在写的时候，会复制一个旧的容器到新的容器，并加锁（不然会copy出N个副本），写完再将引用指向这个新的容器。场景是读多写少的场景。缺点：内存占用问题：因为同时存在旧的容器和新的容器，如果旧的容器占用太多的内存，会造成浪费，且会造成频繁的垃圾回收。数据一致性问题。不能保证数据的实时一致性问题。
+#### 3.HashMap
+HashMap有一个数组+链表组成。当来一个元素的时候，先根据hashcode函数算出桶的位置（索引的位置），当key相同的话根据equal方法来判定是否是同一个元素，如果不是插入到链表。    
+hashmap的容量因子到了0.75就会调用rehash重新散步，将容量加倍。     
+hashmap的keyset和entryset两种遍历方式。keyset相当于遍历了两遍，第一遍仅仅返回key，然后根据key去找value。而entryset则返回了key，value对。    
+hastmap不是线程安全的；     
+#### 4.HashMap和HashTable区别
+Hashmap允许null值和value，但是hashTable不允许    
+Hashmap不是是线程安全的，Hashtable是线程安全的     
+hashmap的默认大小是16，每次rehash为原来的两倍，hashtable默认大小是11，
+#### 5.Hashtable和ConcurrentHashMap
+ConcurrentHashmap先分段，分段加锁。每一个段分别是一个hashtable结构。    
+使用线程安全的还可以使用collections.synchronizedMap（） 
+#### 6.hashset和hashmap
+hashset实际是hashmap的封装，底层基于hashmap来实现。hashset不是线程安全的。    
+调用线程安全的vertor或者collections.synchronizedlist。
+#### 7.hashset和treeset区别
+treeset是有序的或者是自然有序，或者自己实现collections排序。treeset基于二叉树的方式实现。      
+#### 8.set使用什么方式判重复
+使用equals而不是使用==
+#### 9.treemap基于什么实现   
+treemap基于红黑树实现    
+#### 10.hashcode
+hashcode主要用于散列，两个不相等的对象有可能hashcode相同，但是equal不同。重写equal的时候会重写hashcode，为的是加快效率。  
+#### 11.linkedhashmap
+hashmap的数据插入的无序的，linkedhashmap在hashmap的基础上又维护了一个双向链表来保证元素的有序性。    
+#### 12.list
+linkedList是双向链表。   
+插入数据时候Linkedlist最快，其次是ArrayList最后是vector    
+ArrayList默认容量是10，扩容的按照一倍的去扩容。    
+vector底层是数组实现，默认容量是10，扩容的按照一倍。   
+    
