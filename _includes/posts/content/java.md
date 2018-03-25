@@ -62,3 +62,10 @@ Integer和new Integer==比较是不相等的；
 两个非new出来的Integer，如果值在-128到127之间是相等的，使用的是缓存，不在这个范围内是不等的，是new出来的对象。
 #### 3.数组有没有length()这个方法
 数组没有这个方法，有这个属性
+#### 4.String和StringBuffer
+String不可以修改，重新赋值是生成新的对象；StringBuffer变量，可以修改其内容。
+
+### 5.集合、容器
+#### 1.BlockingQueue是什么
+BlockingQueue是阻塞队列，有ArrayBlockingQueue(固定大小，数组实现)、LinkedBlockingQueue（链表实现）、PriorityBlockingQueue（只含有一个元素的队列）等。实现的原理是使用锁和设置锁条件。
+#### 2.
